@@ -1,0 +1,160 @@
+/*----------------Start Nav-bar----------------------*/
+*{
+   margin : 5px 5px 5px 5px;
+    
+}
+body{
+    background-color: #ecf0f1;
+}
+.header {
+     grid-area: header; 
+     color: #3498db;
+    }
+nav a{
+    padding: 30px;
+     margin: 30px;
+     border-top-style:none ;
+     border-right-style:none ;
+     border-bottom-style:none ;
+     border-left-style:none ;
+     font-size: 25px;
+     color: #3498db;
+}
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+    font-weight: bold;
+  }
+/*----------------Start footer----------------------*/
+.footer {
+     grid-area: footer; 
+    font-size: large;
+     text-align: center;
+     font-weight: bold;
+     color: #3498db;
+}
+/*--------------------------Start index page----------------------------*/
+.main-index-1{ grid-area: main-1; }
+.main-index-2{ grid-area: main-2; }
+.grid-container-index {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'main-1 main-1 main-1 main-2 main-2 main-2'
+      'footer footer footer footer footer footer';
+  }
+  .main-index-1  {
+    top: 30px;
+}
+  .main-index-1 img{
+      width: 470px;
+      height: 450px;
+      border-radius: 50%;
+      text-align: center;
+  }
+  .main-index-2 {
+     text-align: left;
+     top: 30px;
+     font-size: larger;
+  }
+  .main-index-2 h1 , h2{
+      top: 15px;
+    font-family: 'Mirza', cursive;
+    font-family: 'Quintessential', cursive;
+    font-family: 'Rakkas', cursive;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+  }
+  .main-index-2 p{
+        font-family: 'Mirza', cursive;
+        font-family: 'Quintessential', cursive;
+        font-family: 'Rakkas', cursive;
+        font-family: 'Roboto', sans-serif;
+        padding: 5px;
+        text-align: justify;
+  }
+  /*--------------------------Start projects page----------------------------*/
+  .main-projects{ grid-area: main; }
+.grid-container-projects {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'main main main main main main'
+      'footer footer footer footer footer footer';
+  }
+  .main-projects h1 {
+    top: 15px;
+    font-family: 'Mirza', cursive;
+    font-family: 'Quintessential', cursive;
+    font-family: 'Rakkas', cursive;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+  .main-projects ul {
+      text-align: center;
+      list-style-type: none;
+  }
+  .main-projects li {
+     margin: 1.5em;
+}
+.main-projects a {
+     color: #27ae60;
+}
+
+  /*--------------------------Start contact page----------------------------*/
+  .main-contact{ grid-area: main; }
+.grid-container-contact {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'main main main main main main'
+      'footer footer footer footer footer footer';
+  }
+  .main-contact h1 ,h2{
+    top: 15px;
+    font-family: 'Mirza', cursive;
+    font-family: 'Quintessential', cursive;
+    font-family: 'Rakkas', cursive;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+}
+  .main-contact ul {
+      list-style-type: none;
+  }
+  .main-contact li {
+     margin: 1.5em;
+}
+
+
+  /* @media(min-width:567px) sm  يعني ان اقل عرض تصل الشاشات الصغيرة*/
+/* @media(min-width:768px) md   يعني ان اقل عرض تصل الشاشات المتوسطة*/
+/* @media(min-width:992px) lg   يعني ان اقل عرض تصل له الشاشات الكبيرة*/
+/* @media(min-width:1200px) xlg  يعني ان اقل عرض تصل له الشاشات ذات الحجم الكبير جدا  */
+/*-------------------------start media--------------------------*/
+@media(max-width:768px){
+    nav a{
+    padding: 0px;
+     margin: 0px;
+    }
+    .logo{
+        text-align: center;
+    }
+    .main-index-1 img{
+        width: 100%;
+        height:  auto;
+        top: 10px;
+    }
+    
+}
